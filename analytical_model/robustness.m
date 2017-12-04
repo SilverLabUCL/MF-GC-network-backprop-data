@@ -229,7 +229,7 @@ for theta = [0:.5:2,2.25:.25:3.75]
     robustness_speed = [robustness_speed, nansum(temp(:)>0)/numel(temp(:))];
 
 end
-%%
+
 figure, plot([0:.5:2,2.25:.25:3.75],robustness_speed,'-ok','LineWidth',3,'MarkerFaceColor','k')
 hold on, plot([3,3],[0,1],':k','LineWidth',2), axis([0,4,0,1])
 xlabel('Correlation radius (\mum)'), ylabel('Robustness of learning')

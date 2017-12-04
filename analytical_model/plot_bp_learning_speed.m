@@ -1,5 +1,5 @@
 % Plot results from backprop learning
-% i.e., Fig. 1d,f
+% i.e., Fig. 1f
 
 N_syn = 1:20; % Synaptic connectivity / Number inputs
 f_mf = linspace(.05,.95,19); % fraction active MFs
@@ -84,9 +84,11 @@ title('Normalized learning speed');
 xlabel('Fraction active MFs'); ylabel('Number inputs')
 hold on, plot(y2,x,'Color',[.3,.8,1],'LineWidth',5)
 
+
 %% Here plot Fig. 1d
 
 % Parameters to plot
+
 Nsyn = 4; % number inputs
 f_mf_ix = 10; % corresponds to f_mf = 0.5
 
@@ -164,9 +166,9 @@ xlabel('Correlation radius (\mum)'), ylabel('Norm. speed')
 set(gca,'FontSize',20)
 
 
-figure, plot(0:5:30,speed_grc_sparse,'-or','LineWidth',3,'MarkerFaceColor','r')
-hold on, plot(0:5:30,speed_grc_dense,'--or','LineWidth',3,'MarkerFaceColor','r')
- plot(0:5:30,speed_mf,'-ob','LineWidth',3,'MarkerFaceColor','b')
+figure, plot(0:5:30,speed_grc_sparse,'-ob','LineWidth',3,'MarkerFaceColor','b')
+hold on, plot(0:5:30,speed_grc_dense,'--ob','LineWidth',3,'MarkerFaceColor','b')
+ plot(0:5:30,speed_mf,'-or','LineWidth',3,'MarkerFaceColor','r')
 xlabel('Correlation radius (\mum)'), ylabel('Speed')
 set(gca,'FontSize',20)
 

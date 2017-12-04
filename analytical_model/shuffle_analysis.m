@@ -1,3 +1,5 @@
+% Partially shuffle code and compare activity patterns
+% Plots Fig. 5a,b,c
 
 N_syn = 1:20; % Synaptic connectivity / Number inputs
 f_mf = linspace(.05,.95,19); % fraction active MFs
