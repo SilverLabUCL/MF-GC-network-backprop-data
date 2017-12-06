@@ -19,4 +19,4 @@ Includes:
 
 This repo only contains data. For necessary scripts, see: https://github.com/SilverLabUCL/MF-GC-network-backprop-public
 
-Warning before you clone: This repo is ~2Gb.
+**Warning before you clone:** This repo is ~2Gb.
